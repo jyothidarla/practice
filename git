@@ -1,0 +1,20 @@
+git log --oneline
+git reflog
+git branch branch_name
+git branch -d branch_name
+git chechout branch_name
+stash: stash is a temparary storage area for storing the files
+- git stash file_name
+- git stash -u : all the untracked files stashing
+- git stash pop stash@{0}
+sqash: wee can merge the multiple commits into single commit
+- fist commit the changes
+- git rebase -i HEAD~5
+after g into the vi editor and remove the word pick and replace the word squash.
+- with this we can also rearrange the commit ids
+git reset:
+ with this we can switch between which ever version we want.
+ 
+ git reset --hard commit_id: here the head is pointing to the next tp the [revious commit
+ git reset --soft commit_id: the head is pointing to the next id but the files are in staging area
+ git reset   
