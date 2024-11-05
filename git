@@ -17,4 +17,17 @@ git reset:
  
  git reset --hard commit_id: here the head is pointing to the next tp the [revious commit
  git reset --soft commit_id: the head is pointing to the next id but the files are in staging area
- git reset   
+ git reset --mixed commit-id
+--------------------------------------------------------------------------------
+
+###git merging, having some conflicts, whenever you have getting any error messages:
+  546  git remote -v
+  547  git push -u origin master
+  548  git fetch origin
+  549  git merge origin/master
+  550  git merge origin/master
+  551  git push -u origin master
+  552  git pull --rebase origin master
+  553  git push -u origin master
+
+
